@@ -125,7 +125,7 @@ export default function MoviesPage() {
           
           {isAdmin && (
             <button 
-              onClick={() => router.push('/movies/add')} // Route to your Add Movie form
+              onClick={() => router.push('/Movies/Add')} // Route to your Add Movie form
               className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 font-medium transition-colors"
             >
               + Add New Movie
@@ -199,7 +199,7 @@ export default function MoviesPage() {
                 {/* ACTION BUTTONS */}
                 <div className="p-4 border-t border-gray-100 bg-gray-50 flex gap-2">
                   <button
-                    onClick={() => router.push(`/movies/${movie.id}/shows`)} // Links to Shows view
+                    onClick={() => router.push(`/Movies/${movie.id}/Shows`)} // Links to Shows view
                     className="flex-1 bg-indigo-600 text-white px-3 py-2 rounded-md hover:bg-indigo-700 font-medium text-sm transition-colors text-center"
                   >
                     View Shows & Book

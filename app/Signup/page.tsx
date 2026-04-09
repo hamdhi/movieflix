@@ -131,6 +131,11 @@ export default function SignUpPage() {
           >
             {isLoading ? 'Creating account...' : 'Sign Up'}
           </button>
+
+          <button type="submit" disabled={isLoading} onClick={() => router.push('/login')} className="w-full rounded-md bg-indigo-600 py-2 px-4 text-white hover:bg-indigo-700 disabled:opacity-70 mt-2">
+            Already have an account? Log in
+          </button>
+
         </form>
       </div>
     </div>
